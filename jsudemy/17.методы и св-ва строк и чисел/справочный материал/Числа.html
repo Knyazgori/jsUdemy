@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://learn.javascript.ru/number -->
+<html lang="ru" class="working-hover"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./Числа_files/js"></script><script>window.currentUser = null;</script><script>window.rateUsdToNative = 74.964198;</script><title itemprop="name">Числа</title><link href="./Числа_files/styles.1c2d6f68af2cf9ea1273.css" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><!-- chrome autotranslate is enabled only for "en" main version--><meta name="google" content="notranslate"><script>if (window.devicePixelRatio > 1) document.cookie = 'pixelRatio=' + window.devicePixelRatio + ';path=/;expires=Tue, 19 Jan 2038 03:14:07 GMT';</script><link href="./Числа_files/css" rel="stylesheet"><link rel="apple-touch-icon-precomposed" href="https://learn.javascript.ru/img/favicon/apple-touch-icon-precomposed.png"><link rel="canonical" href="https://learn.javascript.ru/number"><meta name="msapplication-TileColor" content="#222A2C"><meta name="msapplication-TileImage" content="/img/favicon/tileicon.png"><link rel="icon" href="https://learn.javascript.ru/img/favicon/favicon.png"><meta itemprop="image" content="https://learn.javascript.ru/img/site_preview_ru_512x512.png"><meta property="og:title" content="Числа"><meta property="og:image" content="https://learn.javascript.ru/img/site_preview_ru_1200x630.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="fb:admins" content="100001562528165"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Числа"><meta name="twitter:site" content="@iliakan"><meta name="twitter:creator" content="@iliakan"><meta name="twitter:image" content="https://learn.javascript.ru/img/site_preview_ru_512x512.png"><link rel="prev" href="https://learn.javascript.ru/primitives-methods"><link rel="next" href="https://learn.javascript.ru/string"><script>window.GA_ID = "UA-2056213-16";</script><script>window.GTM_ID = 'GTM-WD2DZPG'</script><script>window.YANDEX_METRIKA_ID = 17649010;</script><script>window.GoogleAnalyticsObject="ga",window.ga=function(){window.ga.q.push(arguments)},window.ga.q=[],window.ga.l=Date.now(),ga("create",GA_ID,"auto"),window.GTM_ID&&ga("require",GTM_ID),window.currentUser?ga("set","&uid",currentUser.id):ga("set","anonymizeIp",!0),window.addEventListener("error",function(e){var r=(e.filename||e.errorUrl)+": "+(e.lineno||e.errorLine),n=e.stack||e.error&&e.error.stack;ga("send","exception",{exDescription:e.message+" "+r+" "+n,exFatal:!0})});</script><script src="./Числа_files/analytics.js.Без названия" async=""></script><script>ga('send', 'pageview');</script><script>window.metrika={reachGoal:function(){}},window.yandex_metrika_callbacks=[function(){try{window.metrika=new Ya.Metrika({id:YANDEX_METRIKA_ID,webvisor:!0,clickmap:!0,params:{user:window.currentUser&&window.currentUser.id}}),metrika.trackLinks({delay:150}),window.addEventListener("error",function(r){window.metrika.reachGoal("JSERROR",{src:(r.filename||r.errorUrl)+": "+(r.lineno||r.errorLine),stack:r.stack||r.error&&r.error.stack,message:r.message})})}catch(r){}}];</script><script src="./Числа_files/watch.js.Без названия" async=""></script><script>window.RECAPTCHA_ID = "6LfmLAEVAAAAAJMykMnf7aY8nkyTRmYi2ynx51R1";</script><script src="./Числа_files/init.1c2d6f68af2cf9ea1273.js.Без названия"></script><script src="./Числа_files/head.1c2d6f68af2cf9ea1273.js.Без названия" defer=""></script><meta property="og:title" content="Числа"><meta property="og:type" content="article"><script src="./Числа_files/tutorial.1c2d6f68af2cf9ea1273.js.Без названия" defer="" data-manual="1"></script><script src="./Числа_files/footer.1c2d6f68af2cf9ea1273.js.Без названия" defer=""></script></head><body class=""><script>window.fontTest();</script><span class="font-test" style=""></span><div class="page-wrapper page-wrapper_sidebar_on"><!--[if IE]><div style="color:red;text-align:center">Извините, Internet Explorer не поддерживается, пожалуйста используйте более новый браузер.</div><![endif]--><div class="sitetoolbar sitetoolbar_tutorial"><script>window.langs = [{"code":"am","name":"Armenian"},{"code":"ar","name":"Arabic"},{"code":"az","name":"Azerbaijani"},{"code":"bg","name":"Bulgarian"},{"code":"bn","name":"Bengali"},{"code":"ca","name":"Catalan"},{"code":"cs","name":"Czech"},{"code":"de","name":"German"},{"code":"el","name":"Greek"},{"code":"en","name":"English"},{"code":"es","name":"Spanish"},{"code":"fa","name":"Persian (Farsi)"},{"code":"fr","name":"French"},{"code":"he","name":"Hebrew"},{"code":"hi","name":"Hindi"},{"code":"hu","name":"Hungarian"},{"code":"id","name":"Indonesian"},{"code":"it","name":"Italian"},{"code":"ja","name":"Japanese"},{"code":"ka","name":"Georgian"},{"code":"km","name":"Central Khmer"},{"code":"ko","name":"Korean"},{"code":"lt","name":"Lithuanian"},{"code":"me","name":"Montenegrin"},{"code":"ml","name":"Malayalam"},{"code":"nl","name":"Dutch"},{"code":"no","name":"Norvegian"},{"code":"pa","name":"Punjabi"},{"code":"pl","name":"Polish"},{"code":"pt","name":"Portuguese"},{"code":"ro","name":"Romanian"},{"code":"ru","name":"Russian"},{"code":"si","name":"Sinhala"},{"code":"sk","name":"Slovak"},{"code":"sq","name":"Albanian"},{"code":"ta","name":"Tamil"},{"code":"te","name":"Telugu"},{"code":"test","name":"Test"},{"code":"th","name":"Thai"},{"code":"tk","name":"Turkmen"},{"code":"tr","name":"Turkish"},{"code":"uk","name":"Ukrainian"},{"code":"uz","name":"Uzbek"},{"code":"vi","name":"Vietnamese"},{"code":"zh-hant","name":"Chinese Traditional"},{"code":"zh","name":"Chinese"}];</script><script>window.lang = "ru";</script><script>{let t=navigator.languages||[];t=t.map(t=>t.toLowerCase());let a,o,i=[];for(let a of window.langs)for(let o of t)if(o===a.code||o.startsWith(a.code+"-")){i.push(a);break}if("en"===lang){let t=i.find(t=>"en"!=t.code);t&&"ru"!=t.code&&(a=`\n            According to your browser language headers, you know ${t.name}. Please help to <a href="https://github.com/javascript-tutorial/${t.code}.javascript.info#readme">translate the tutorial</a> into your language!\n            Thank you!\n          `,o="notify-translate-tutorial")}else if("ru"===lang)o="notify-ru-tutorial",a='\n          Новая редакция учебника была недавно переведена с английского.<br>Если что-то не так - пожалуйста, поправьте в <a href="https://github.com/javascript-tutorial/ru.javascript.info">PR на GitHub</a> (ссылка на редактирование слева в сайдбаре статьи).\n          Спасибо!\n        ';else if("tr"==lang)a='The Turkish version is only half-translated yet! Please help us with its translation at <a href="https://github.com/javascript-tutorial/tr.javascript.info">GitHub</a>.',o="notify-tr-tutorial";else{i.find(t=>"en"==t.code)&&(a=`\n            According to your browser headers, you know English. Please help to <a href="https://github.com/javascript-tutorial/${lang}.javascript.info#readme">translate the tutorial</a>.\n            Thank you!\n          `,o="notify-translate-tutorial-local")}if(a){let t=`<div class="notification notification_top notification_info sitetoolbar__notification" style="display:none" id="${o}">\n          <div class="notification__content">${a}</div>\n          <button class="notification__close" title="Close"></button>\n        </div>`;document.write(t),showTopNotification()}}</script><div class="notification notification_top notification_info sitetoolbar__notification" style="" id="notify-ru-tutorial">
+          <div class="notification__content">
+          Новая редакция учебника была недавно переведена с английского.<br>Если что-то не так - пожалуйста, поправьте в <a href="https://github.com/javascript-tutorial/ru.javascript.info">PR на GitHub</a> (ссылка на редактирование слева в сайдбаре статьи).
+          Спасибо!
+        </div>
+          <button class="notification__close" title="Close"></button>
+        </div><div class="sitetoolbar__content"><div class="sitetoolbar__lang-switcher"><button class="sitetoolbar__dropdown-button" data-dropdown-toggler="">RU</button><div class="sitetoolbar__dropdown-wrap"><div class="sitetoolbar__dropdown-body"><div class="sitetoolbar__lang-switcher-body"><div class="supported-langs supported-langs_toolbar"><div class="supported-langs__container"><ul class="supported-langs__list" style="height:200px"><li class="supported-langs__item"><a class="supported-langs__link" href="https://ar.javascript.info/number"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a></li><li class="supported-langs__item"><a class="supported-langs__link" href="https://javascript.info/number"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a></li><li class="supported-langs__item"><a class="supported-langs__link" href="https://es.javascript.info/number"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a></li><li class="supported-langs__item"><a class="supported-langs__link" href="https://ja.javascript.info/number"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a></li><li class="supported-langs__item"><a class="supported-langs__link" href="https://ko.javascript.info/number"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a></li><li class="supported-langs__item supported-langs__item_current"><a class="supported-langs__link" href="https://learn.javascript.ru/number"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a></li></ul><ul class="supported-langs__list" style="height:56px"><li class="supported-langs__item"><a class="supported-langs__link" href="https://tr.javascript.info/number"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a></li><li class="supported-langs__item"><a class="supported-langs__link" href="https://zh.javascript.info/number"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a></li></ul></div><div class="supported-langs__text">Мы хотим сделать этот проект с открытым исходным кодом доступным для людей во всем мире. Пожалуйста, <a href="https://github.com/javascript-tutorial/translate" rel="noopener noreferrer" target="_blank">помогите нам перевести</a> это руководство на свой язык</div></div></div></div></div></div><div class="sitetoolbar__logo-wrap"><a class="sitetoolbar__link sitetoolbar__link_logo" href="https://learn.javascript.ru/"><object type="image/svg+xml" class="sitetoolbar__logo sitetoolbar__logo_normal" data="./Числа_files/sitetoolbar__logo_ru.svg" style="left: 0px; top: 0px; position: absolute;"></object><img class="sitetoolbar__logo sitetoolbar__logo_normal" src="./Числа_files/sitetoolbar__logo_ru.svg" width="171" alt="" role="presentation"><object type="image/svg+xml" class="sitetoolbar__logo sitetoolbar__logo_small" data="./Числа_files/sitetoolbar__logo_small_ru.svg" style="left: 0px; top: 0px; position: absolute;"></object><img class="sitetoolbar__logo sitetoolbar__logo_small" src="./Числа_files/sitetoolbar__logo_small_ru.svg" width="80" alt="" role="presentation" style="visibility: hidden;"><script>Array.prototype.forEach.call(document.querySelectorAll("img.sitetoolbar__logo"),function(e){let t=document.createElement("object");t.type="image/svg+xml",t.className=e.className,t.style.cssText="left:0;top:0;position:absolute",t.onload=function(){t.onload=null,e.style.visibility="hidden"},t.data=e.src,e.parentNode.insertBefore(t,e)});</script></a></div><div class="sitetoolbar__nav-toggle-wrap"><button class="sitetoolbar__nav-toggle" type="button"></button></div><nav class="sitetoolbar__sections"><ul class="sitetoolbar__sections-list"><li class="sitetoolbar__section sitetoolbar__section_current"><a class="sitetoolbar__link" href="https://learn.javascript.ru/">Учебник</a></li><li class="sitetoolbar__section"><a class="sitetoolbar__link" href="https://learn.javascript.ru/courses">Курсы</a></li><li class="sitetoolbar__section"><a class="sitetoolbar__link" href="https://javascript.ru/forum/">Форум</a></li><li class="sitetoolbar__section"><a class="sitetoolbar__link" href="https://es5.javascript.ru/">ES5</a></li><li class="sitetoolbar__section"><a class="sitetoolbar__link" href="https://learn.javascript.ru/quiz">Тесты знаний</a></li><li class="sitetoolbar__section sitetoolbar__section_dropdown"><button class="sitetoolbar__dropdown-button" data-dropdown-toggler="">Скринкасты</button><div class="sitetoolbar__dropdown-wrap"><div class="sitetoolbar__dropdown-body"><ul class="sitetoolbar__dropdown-items"><li class="sitetoolbar__dropdown-item"><a class="sitetoolbar__secondary-link sitetoolbar__dropdown-link" href="https://learn.javascript.ru/screencast/nodejs">Node.js</a></li><li class="sitetoolbar__dropdown-item"><a class="sitetoolbar__secondary-link sitetoolbar__dropdown-link" href="https://learn.javascript.ru/screencast/webpack">Webpack</a></li><li class="sitetoolbar__dropdown-item"><a class="sitetoolbar__secondary-link sitetoolbar__dropdown-link" href="https://learn.javascript.ru/screencast/gulp">Gulp 4</a></li><li class="sitetoolbar__dropdown-item"><a class="sitetoolbar__secondary-link sitetoolbar__dropdown-link" href="https://learn.javascript.ru/screencast/react">React.js</a></li><li class="sitetoolbar__dropdown-item"><a class="sitetoolbar__secondary-link sitetoolbar__dropdown-link" href="https://learn.javascript.ru/screencast/angular">Angular</a></li><li class="sitetoolbar__dropdown-item"><a class="sitetoolbar__secondary-link sitetoolbar__dropdown-link" href="https://learn.javascript.ru/screencast/git">Git</a></li></ul></div></div></li></ul></nav><div class="sitetoolbar__book-wrap"><a class="buy-book-button" href="https://learn.javascript.ru/ebook"><span class="buy-book-button__extra-text">Купить</span>EPUB/PDF</a></div><div class="sitetoolbar__login-wrap"><button class="sitetoolbar__login" data-action-login=""></button></div><div class="sitetoolbar__search-wrap"><div class="sitetoolbar__search-content"><form class="sitetoolbar__search" method="GET" action="https://learn.javascript.ru/search"><button class="sitetoolbar__search-toggle" type="button"></button><div class="sitetoolbar__search-input"><div class="text-input"><input class="text-input__control" name="query" placeholder="Искать на Javascript.ru" required="required" type="text"></div><button class="sitetoolbar__find" type="submit">Найти</button></div></form></div></div></div><div class="tablet-menu"><div class="tablet-menu__line"><div class="tablet-menu__content"><select class="tablet-menu__nav input-select input-select input-select_small" onchange="if(this.value) window.location.href=this.value"><option value="/" selected="">Учебник</option><option value="/courses">Курсы</option><option value="https://javascript.ru/forum/">Форум</option><option value="https://es5.javascript.ru">ES5</option><option value="/quiz">Тесты знаний</option></select></div></div><div class="tablet-menu__line"><div class="tablet-menu__content"><form class="tablet-menu-search" action="https://learn.javascript.ru/search/"><input class="tablet-menu-search__input" type="search" name="query" placeholder="Поиск в учебнике" required="required"><button class="tablet-menu-search__button" type="submit" name="type" value="articles">Поиск</button></form></div></div><div class="tablet-menu__line"><div class="tablet-menu__content"><a class="map" href="https://learn.javascript.ru/tutorial/map" data-action="tutorial-map"><span class="map__text">Карта учебника</span></a></div></div><div class="tablet-menu__line"><div class="tablet-menu__content"><div class="share-icons"><span class="share-icons__title">Поделиться</span><a class="share share_tw" href="https://twitter.com/share?url=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a><a class="share share_fb" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a><a class="share share_vk" href="https://vkontakte.ru/share.php?url=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a></div></div></div><div class="tablet-menu__line"><div class="tablet-menu__content"><select class="tablet-menu__nav input-select input-select input-select_small" onchange="if(this.value) window.location.href=this.value"><option value="https://ar.javascript.info/number">عربي</option><option value="https://javascript.info/number">English</option><option value="https://es.javascript.info/number">Español</option><option value="https://ja.javascript.info/number">日本語</option><option value="https://ko.javascript.info/number">한국어</option><option value="https://learn.javascript.ru/number" selected="">Русский</option><option value="https://tr.javascript.info/number">Türkçe</option><option value="https://zh.javascript.info/number">简体中文</option></select></div></div></div><progress class="tutorial-progress" data-sticky="" value="35" max="90" data-tooltip="Урок 35 из 90"></progress></div><div class="page page_sidebar_on page_inner_padding page_sidebar-animation-on"><script>if(localStorage.noSidebar){document.querySelector(".page").classList.remove("page_sidebar_on");var pageWrapper=document.querySelector(".page-wrapper");pageWrapper&&pageWrapper.classList.remove("page-wrapper_sidebar_on")}setTimeout(function(){document.querySelector(".page").classList.add("page_sidebar-animation-on")},0);</script><div class="page__inner"><main class="main main_width-limit"><header class="main__header"><div class="main__header-inner"><div class="main__header-group"><ol class="breadcrumbs"><li class="breadcrumbs__item breadcrumbs__item_home"><a class="breadcrumbs__link" href="https://learn.javascript.ru/"><span class="breadcrumbs__hidden-text">Учебник</span></a></li><li class="breadcrumbs__item" id="breadcrumb-1"><a class="breadcrumbs__link" href="https://learn.javascript.ru/js"><span>Язык программирования JavaScript</span></a></li><li class="breadcrumbs__item" id="breadcrumb-2"><a class="breadcrumbs__link" href="https://learn.javascript.ru/data-types"><span>Типы данных</span></a></li><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Учебник","item":"https://learn.javascript.ru/"},{"@type":"ListItem","position":2,"name":"Язык программирования JavaScript","item":"https://learn.javascript.ru/js"},{"@type":"ListItem","position":3,"name":"Типы данных","item":"https://learn.javascript.ru/data-types"}]}</script></ol><div class="updated-at" data-tooltip="Последнее обновление: 5-го августа 2020"><div class="updated-at__content">5-го августа 2020</div></div></div><h1 class="main__header-title">Числа</h1></div></header><div class="content"><article class="formatted" itemscope="" itemtype="http://schema.org/TechArticle"><meta itemprop="name" content="Числа"><div itemprop="author" itemscope="" itemtype="http://schema.org/Person"><meta itemprop="email" content="iliakan@gmail.com"><meta itemprop="name" content="Ilya Kantor"></div><div itemprop="articleBody"><p>В современном JavaScript существует два типа чисел:</p>
+<ol>
+<li>Обычные числа в JavaScript хранятся в 64-битном формате <a href="http://en.wikipedia.org/wiki/IEEE_754-1985">IEEE-754</a>, который также называют «числа с плавающей точкой двойной точности» (double precision floating point numbers). Это числа, которые мы будем использовать чаще всего. Мы поговорим о них в этой главе.</li>
+<li><code>BigInt</code> числа дают возможность работать с целыми числами произвольной длины. Они нужны достаточно редко и используются в случаях, когда необходимо работать со значениями более чем <code>2<sup>53</sup></code> или менее чем <code>-2<sup>53</sup></code>. Так как <code>BigInt</code> числа нужны достаточно редко, мы рассмотрим их в отдельной главе <a href="https://learn.javascript.ru/bigint">BigInt</a>.</li>
+</ol>
+<p>В данной главе мы рассмотрим только первый тип чисел: числа типа <code>number</code>. Давайте глубже изучим, как с ними работать в JavaScript.</p>
+<h2><a class="main__anchor" name="sposoby-zapisi-chisla" href="https://learn.javascript.ru/number#sposoby-zapisi-chisla">Способы записи числа</a></h2><p>Представьте, что нам надо записать число 1 миллиард. Самый очевидный путь:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> billion <span class="token operator">=</span> <span class="token number">1000000000</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Но в реальной жизни мы обычно опускаем запись множества нулей, так как можно легко ошибиться. Укороченная запись может выглядеть как <code>"1млрд"</code> или <code>"7.3млрд"</code> для 7 миллиардов 300 миллионов. Такой принцип работает для всех больших чисел.</p>
+<p>В JavaScript можно использовать букву <code>"e"</code>, чтобы укоротить запись числа. Она добавляется к числу и заменяет указанное количество нулей:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> billion <span class="token operator">=</span> <span class="token number">1e9</span><span class="token punctuation">;</span>  <span class="token comment">// 1 миллиард, буквально: 1 и 9 нулей</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">7.3e9</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 7.3 миллиардов (7,300,000,000)</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Другими словами, <code>"e"</code> производит операцию умножения числа на 1 с указанным количеством нулей.</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token number">1e3</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">*</span> <span class="token number">1000</span>
+<span class="token number">1.23e6</span> <span class="token operator">=</span> <span class="token number">1.23</span> <span class="token operator">*</span> <span class="token number">1000000</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Сейчас давайте запишем что-нибудь очень маленькое. К примеру, 1 микросекунду (одна миллионная секунды):</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> ms <span class="token operator">=</span> <span class="token number">0.000001</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Записать микросекунду в укороченном виде нам поможет <code>"e"</code>.</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> ms <span class="token operator">=</span> <span class="token number">1e-6</span><span class="token punctuation">;</span> <span class="token comment">// шесть нулей, слева от 1</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Если мы подсчитаем количество нулей <code>0.000001</code>, их будет 6. Естественно, верная запись <code>1e-6</code>.</p>
+<p>Другими словами, отрицательное число после <code>"e"</code> подразумевает деление на 1 с указанным количеством нулей:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token comment">// 1 делится на 1 с 3 нулями</span>
+<span class="token number">1e-3</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token number">1000</span> <span class="token punctuation">(</span><span class="token operator">=</span><span class="token number">0.001</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 1.23 делится на 1 с 6 нулями</span>
+<span class="token number">1.23e-6</span> <span class="token operator">=</span> <span class="token number">1.23</span> <span class="token operator">/</span> <span class="token number">1000000</span> <span class="token punctuation">(</span><span class="token operator">=</span><span class="token number">0.00000123</span><span class="token punctuation">)</span></code></pre>
+        </div>
+      </div>
+      
+      </div><h3><a class="main__anchor" name="shestnadtsaterichnye-dvoichnye-i-vosmerichnye-chisla" href="https://learn.javascript.ru/number#shestnadtsaterichnye-dvoichnye-i-vosmerichnye-chisla">Шестнадцатеричные, двоичные и восьмеричные числа</a></h3><p><a href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D0%B4%D1%86%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D1%87%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%81%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">Шестнадцатеричные</a> числа широко используются в JavaScript для представления цветов, кодировки символов и многого другого. Естественно, есть короткий стиль записи: <code>0x</code>, после которого указывается число.</p>
+<p>Например:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">0xff</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 255</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">0xFF</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 255 (то же самое, регистр не имеет значения)</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Не так часто используются двоичные и восьмеричные числа, но они также поддерживаются <code>0b</code> для двоичных и <code>0o</code> для восьмеричных:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">0b11111111</span><span class="token punctuation">;</span> <span class="token comment">// бинарная форма записи числа 255</span>
+<span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token number">0o377</span><span class="token punctuation">;</span> <span class="token comment">// восьмеричная форма записи числа 255</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> a <span class="token operator">==</span> b <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true, с двух сторон число 255</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Есть только 3 системы счисления с такой поддержкой. Для других систем счисления мы рекомендуем использовать функцию <code>parseInt</code> (рассмотрим позже в этой главе).</p>
+<h2><a class="main__anchor" name="tostring-base" href="https://learn.javascript.ru/number#tostring-base">toString(base)</a></h2><p>Метод <code>num.toString(base)</code> возвращает строковое представление числа <code>num</code> в системе счисления <code>base</code>.</p>
+<p>Например:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">255</span><span class="token punctuation">;</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> num<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// ff</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> num<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 11111111</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p><code>base</code> может варьироваться от <code>2</code> до <code>36</code> (по умолчанию <code>10</code>).</p>
+<p>Часто используемые:</p>
+<ul>
+<li>
+<p><strong>base=16</strong> — для шестнадцатеричного представления цвета, кодировки символов и т.д., цифры могут быть <code>0..9</code> или <code>A..F</code>.</p>
+</li>
+<li>
+<p><strong>base=2</strong> — обычно используется для отладки побитовых операций, цифры <code>0</code> или <code>1</code>.</p>
+</li>
+<li>
+<p><strong>base=36</strong> — максимальное основание, цифры могут быть <code>0..9</code> или <code>A..Z</code>. То есть, используется весь латинский алфавит для представления числа. Забавно, но можно использовать <code>36</code>-разрядную систему счисления для получения короткого представления большого числового идентификатора. К примеру, для создания короткой ссылки. Для этого просто преобразуем его в <code>36</code>-разрядную систему счисления:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">123456.</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">36</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2n9c</span></code></pre>
+        </div>
+      </div>
+      
+      </div></li>
+</ul>
+<div class="important important_warn">
+            <div class="important__header"><span class="important__type">Две точки для вызова метода</span></div>
+            <div class="important__content"><p>Внимание! Две точки в <code>123456..toString(36)</code> это не опечатка. Если нам надо вызвать метод непосредственно на числе, как <code>toString</code> в примере выше, то нам надо поставить две точки <code>..</code> после числа.</p>
+<p>Если мы поставим одну точку: <code>123456.toString(36)</code>, тогда это будет ошибкой, поскольку синтаксис JavaScript предполагает, что после первой точки начинается десятичная часть. А если поставить две точки, то JavaScript понимает, что десятичная часть отсутствует, и начинается метод.</p>
+<p>Также можно записать как <code>(123456).toString(36)</code>.</p>
+</div></div>
+<h2><a class="main__anchor" name="okruglenie" href="https://learn.javascript.ru/number#okruglenie">Округление</a></h2><p>Одна из часто используемых операций при работе с числами – это округление.</p>
+<p>В JavaScript есть несколько встроенных функций для работы с округлением:</p>
+<dl>
+<dt><code>Math.floor</code></dt>
+<dd>Округление в меньшую сторону: <code>3.1</code> становится <code>3</code>, а <code>-1.1</code> — <code>-2</code>.</dd>
+<dt><code>Math.ceil</code></dt>
+<dd>Округление в большую сторону: <code>3.1</code> становится <code>4</code>, а <code>-1.1</code> — <code>-1</code>.</dd>
+<dt><code>Math.round</code></dt>
+<dd>Округление до ближайшего целого: <code>3.1</code> становится <code>3</code>, <code>3.6</code> — <code>4</code>, а <code>-1.1</code> — <code>-1</code>.</dd>
+<dt><code>Math.trunc</code> (не поддерживается в Internet Explorer)</dt>
+<dd>Производит удаление дробной части без округления: <code>3.1</code> становится <code>3</code>, а <code>-1.1</code> — <code>-1</code>.</dd>
+</dl>
+<p>Ниже представлена таблица с различиями между функциями округления:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>Math.floor</code></th>
+<th><code>Math.ceil</code></th>
+<th><code>Math.round</code></th>
+<th><code>Math.trunc</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>3.1</code></td>
+<td><code>3</code></td>
+<td><code>4</code></td>
+<td><code>3</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>3.6</code></td>
+<td><code>3</code></td>
+<td><code>4</code></td>
+<td><code>4</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>-1.1</code></td>
+<td><code>-2</code></td>
+<td><code>-1</code></td>
+<td><code>-1</code></td>
+<td><code>-1</code></td>
+</tr>
+<tr>
+<td><code>-1.6</code></td>
+<td><code>-2</code></td>
+<td><code>-1</code></td>
+<td><code>-2</code></td>
+<td><code>-1</code></td>
+</tr>
+</tbody>
+</table>
+<p>Эти функции охватывают все возможные способы обработки десятичной части. Что если нам надо округлить число до <code>n-ого</code> количества цифр в дробной части?</p>
+<p>Например, у нас есть <code>1.2345</code> и мы хотим округлить число до 2-х знаков после запятой, оставить только <code>1.23</code>.</p>
+<p>Есть два пути решения:</p>
+<ol>
+<li>
+<p>Умножить и разделить.</p>
+<p>Например, чтобы округлить число до второго знака после запятой, мы можем умножить число на <code>100</code>, вызвать функцию округления и разделить обратно.</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">1.23456</span><span class="token punctuation">;</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>num <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1.23456 -&gt; 123.456 -&gt; 123 -&gt; 1.23</span></code></pre>
+        </div>
+      </div>
+      
+      </div></li>
+<li>
+<p>Метод <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">toFixed(n)</a> округляет число до <code>n</code> знаков после запятой и возвращает строковое представление результата.</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">12.34</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> num<span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "12.3"</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Округляет значение до ближайшего числа, как в большую, так и в меньшую сторону, аналогично методу <code>Math.round</code>:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">12.36</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> num<span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "12.4"</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Обратите внимание, что результатом <code>toFixed</code> является строка. Если десятичная часть короче, чем необходима, будут добавлены нули в конец строки:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">12.34</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> num<span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "12.34000", добавлены нули, чтобы получить 5 знаков после запятой</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Мы можем преобразовать полученное значение в число, используя унарный оператор <code>+</code> или <code>Number()</code>, пример с унарным оператором: <code>+num.toFixed(5)</code>.</p>
+</li>
+</ol>
+<h2><a class="main__anchor" name="netochnye-vychisleniya" href="https://learn.javascript.ru/number#netochnye-vychisleniya">Неточные вычисления</a></h2><p>Внутри JavaScript число представлено в виде 64-битного формата <a href="https://ru.wikipedia.org/wiki/IEEE_754-1985">IEEE-754</a>. Для хранения числа используется 64 бита: 52 из них используется для хранения цифр, 11 из них для хранения положения десятичной точки (если число целое, то хранится 0), и один бит отведён на хранение знака.</p>
+<p>Если число слишком большое, оно переполнит 64-битное хранилище, JavaScript вернёт бесконечность:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">1e500</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Infinity</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Наиболее часто встречающаяся ошибка при работе с числами в JavaScript – это потеря точности.</p>
+<p>Посмотрите на это (неверное!) сравнение:</p>
+<div data-trusted="1" class="code-example" data-highlight="[{&quot;start&quot;:0,&quot;cols&quot;:[{&quot;start&quot;:30,&quot;end&quot;:35}]}]" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span> <span class="token operator">==</span> <span class="token number">0.3</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// <em class="inline-highlight">false</em></span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Да-да, сумма <code>0.1</code> и <code>0.2</code> не равна <code>0.3</code>.</p>
+<p>Странно! Что тогда, если не <code>0.3</code>?</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0.30000000000000004</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Ой! Здесь гораздо больше последствий, чем просто некорректное сравнение. Представьте, вы делаете интернет-магазин и посетители формируют заказ из 2-х позиций за <code>$0.10</code> и <code>$0.20</code>. Итоговый заказ будет <code>$0.30000000000000004</code>. Это будет сюрпризом для всех.</p>
+<p>Но почему это происходит?</p>
+<p>Число хранится в памяти в бинарной форме, как последовательность бит – единиц и нулей. Но дроби, такие как <code>0.1</code>, <code>0.2</code>, которые выглядят довольно просто в десятичной системе счисления, на самом деле являются бесконечной дробью в двоичной форме.</p>
+<p>Другими словами, что такое <code>0.1</code>? Это единица делённая на десять — <code>1/10</code>, одна десятая. В десятичной системе счисления такие числа легко представимы, по сравнению с одной третьей: <code>1/3</code>, которая становится бесконечной дробью <code>0.33333(3)</code>.</p>
+<p>Деление на <code>10</code> гарантированно хорошо работает в десятичной системе, но деление на <code>3</code> – нет. По той же причине и в двоичной системе счисления, деление на <code>2</code> обязательно сработает, а <code>1/10</code> становится бесконечной дробью.</p>
+<p>В JavaScript нет возможности для хранения точных значений 0.1 или 0.2, используя двоичную систему, точно также, как нет возможности хранить одну третью в десятичной системе счисления.</p>
+<p>Числовой формат IEEE-754 решает эту проблему путём округления до ближайшего возможного числа. Правила округления обычно не позволяют нам увидеть эту «крошечную потерю точности», но она существует.</p>
+<p>Пример:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">0.1</span><span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0.10000000000000000555</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>И когда мы суммируем 2 числа, их «неточности» тоже суммируются.</p>
+<p>Вот почему <code>0.1 + 0.2</code> – это не совсем <code>0.3</code>.</p>
+<div class="important important_smart">
+            <div class="important__header"><span class="important__type">Не только в JavaScript</span></div>
+            <div class="important__content"><p>Справедливости ради заметим, что ошибка в точности вычислений для чисел с плавающей точкой сохраняется в любом другом языке, где используется формат IEEE 754, включая PHP, Java, C, Perl, Ruby.</p>
+</div></div>
+<p>Можно ли обойти проблему? Конечно, наиболее надёжный способ — это округлить результат используя метод <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">toFixed(n)</a>:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> sum <span class="token operator">=</span> <span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> sum<span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0.30</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Помните, что метод <code>toFixed</code> всегда возвращает строку. Это гарантирует, что результат будет с заданным количеством цифр в десятичной части. Также это удобно для форматирования цен в интернет-магазине <code>$0.30</code>. В других случаях можно использовать унарный оператор <code>+</code>, чтобы преобразовать строку в число:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> sum <span class="token operator">=</span> <span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token operator">+</span>sum<span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0.3</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Также можно временно умножить число на 100 (или на большее), чтобы привести его к целому, выполнить математические действия, а после разделить обратно. Суммируя целые числа, мы уменьшаем погрешность, но она все равно появляется при финальном делении:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token number">0.1</span> <span class="token operator">*</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token number">0.2</span> <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">10</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0.3</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token number">0.28</span> <span class="token operator">*</span> <span class="token number">100</span> <span class="token operator">+</span> <span class="token number">0.14</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0.4200000000000001</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Таким образом, метод умножения/деления уменьшает погрешность, но полностью её не решает.</p>
+<p>Иногда можно попробовать полностью отказаться от дробей. Например, если мы в нашем интернет-магазине начнём использовать центы вместо долларов. Но что будет, если мы применим скидку 30%? На практике у нас не получится полностью избавиться от дроби. Просто используйте округление, чтобы отрезать «хвосты», когда надо.</p>
+<div class="important important_smart">
+            <div class="important__header"><span class="important__type">Забавный пример</span></div>
+            <div class="important__content"><p>Попробуйте выполнить его:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token comment">// Привет! Я – число, растущее само по себе!</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">9999999999999999</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// покажет 10000000000000000</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Причина та же – потеря точности. Из 64 бит, отведённых на число, сами цифры числа занимают до 52 бит, остальные 11 бит хранят позицию десятичной точки и один бит – знак. Так что если 52 бит не хватает на цифры, то при записи пропадут младшие разряды.</p>
+<p>Интерпретатор не выдаст ошибку, но в результате получится «не совсем то число», что мы и видим в примере выше. Как говорится: «как смог, так записал».</p>
+</div></div>
+<div class="important important_smart">
+            <div class="important__header"><span class="important__type">Два нуля</span></div>
+            <div class="important__content"><p>Другим забавным следствием внутреннего представления чисел является наличие двух нулей: <code>0</code> и <code>-0</code>.</p>
+<p>Все потому, что знак представлен отдельным битом, так что, любое число может быть положительным и отрицательным, включая нуль.</p>
+<p>В большинстве случаев это поведение незаметно, так как операторы в JavaScript воспринимают их одинаковыми.</p>
+</div></div>
+<h2><a class="main__anchor" name="proverka-isfinite-i-isnan" href="https://learn.javascript.ru/number#proverka-isfinite-i-isnan">Проверка: isFinite и isNaN</a></h2><p>Помните эти специальные числовые значения?</p>
+<ul>
+<li><code>Infinity</code> (и <code>-Infinity</code>) — особенное численное значение, которое ведёт себя в точности как математическая бесконечность ∞.</li>
+<li><code>NaN</code> представляет ошибку.</li>
+</ul>
+<p>Эти числовые значения принадлежат типу <code>number</code>, но они не являются «обычными» числами, поэтому есть функции для их проверки:</p>
+<ul>
+<li>
+<p><code>isNaN(value)</code> преобразует значение в число и проверяет является ли оно <code>NaN</code>:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">isNaN</span><span class="token punctuation">(</span><span class="token number">NaN</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">isNaN</span><span class="token punctuation">(</span><span class="token string">"str"</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Нужна ли нам эта функция? Разве не можем ли мы просто сравнить <code>=== NaN</code>? К сожалению, нет. Значение <code>NaN</code> уникально тем, что оно не является равным ни чему другому, даже самому себе:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">NaN</span> <span class="token operator">===</span> <span class="token number">NaN</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false</span></code></pre>
+        </div>
+      </div>
+      
+      </div></li>
+<li>
+<p><code>isFinite(value)</code> преобразует аргумент в число и возвращает <code>true</code>, если оно является обычным числом, т.е. не <code>NaN/Infinity/-Infinity</code>:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">isFinite</span><span class="token punctuation">(</span><span class="token string">"15"</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">isFinite</span><span class="token punctuation">(</span><span class="token string">"str"</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false, потому что специальное значение: NaN</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">isFinite</span><span class="token punctuation">(</span><span class="token number">Infinity</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false, потому что специальное значение: Infinity</span></code></pre>
+        </div>
+      </div>
+      
+      </div></li>
+</ul>
+<p>Иногда <code>isFinite</code> используется для проверки, содержится ли в строке число:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token operator">+</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"Enter a number"</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// вернёт true всегда, кроме ситуаций, когда аргумент - Infinity/-Infinity или не число</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">isFinite</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Помните, что пустая строка интерпретируется как <code>0</code> во всех числовых функциях, включая<code>isFinite</code>.</p>
+<div class="important important_smart">
+            <div class="important__header"><span class="important__type">Сравнение <code>Object.is</code></span></div>
+            <div class="important__content"><p>Существует специальный метод <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/is">Object.is</a>, который сравнивает значения примерно как <code>===</code>, но более надёжен в двух особых ситуациях:</p>
+<ol>
+<li>Работает с <code>NaN</code>: <code>Object.is(NaN, NaN) === true</code>, здесь он хорош.</li>
+<li>Значения <code>0</code> и <code>-0</code> разные: <code>Object.is(0, -0) === false</code>, это редко используется, но технически эти значения разные.</li>
+</ol>
+<p>Во всех других случаях <code>Object.is(a, b)</code> идентичен <code>a === b</code>.</p>
+<p>Этот способ сравнения часто используется в спецификации JavaScript. Когда внутреннему алгоритму необходимо сравнить 2 значения на предмет точного совпадения, он использует <code>Object.is</code> (Определение <a href="https://tc39.github.io/ecma262/#sec-samevalue">SameValue</a>).</p>
+</div></div>
+<h2><a class="main__anchor" name="parseint-i-parsefloat" href="https://learn.javascript.ru/number#parseint-i-parsefloat">parseInt и parseFloat</a></h2><p>Для явного преобразования к числу можно использовать <code>+</code> или <code>Number()</code>. Если строка не является в точности числом, то результат будет <code>NaN</code>:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token operator">+</span><span class="token string">"100px"</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// NaN</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Единственное исключение — это пробелы в начале строки и в конце, они игнорируются.</p>
+<p>В реальной жизни мы часто сталкиваемся со значениями у которых есть единица измерения, например <code>"100px"</code> или <code>"12pt"</code> в CSS. Также во множестве стран символ валюты записывается после номинала <code>"19€"</code>. Так как нам получить числовое значение из таких строк?</p>
+<p>Для этого есть <code>parseInt</code> и <code>parseFloat</code>.</p>
+<p>Они «читают» число из строки. Если в процессе чтения возникает ошибка, они возвращают полученное до ошибки число. Функция <code>parseInt</code> возвращает целое число, а <code>parseFloat</code> возвращает число с плавающей точкой:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">'100px'</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 100</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">'12.5em'</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 12.5</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">'12.3'</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 12, вернётся только целая часть</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">'12.3.4'</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 12.3, произойдёт остановка чтения на второй точке</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Функции <code>parseInt/parseFloat</code> вернут <code>NaN</code>, если не смогли прочитать ни одну цифру:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">'a123'</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// NaN, на первом символе происходит остановка чтения</span></code></pre>
+        </div>
+      </div>
+      
+      </div><div class="important important_smart">
+            <div class="important__header"><span class="important__type">Второй аргумент <code>parseInt(str, radix)</code></span></div>
+            <div class="important__content"><p>Функция <code>parseInt()</code> имеет необязательный второй параметр. Он определяет систему счисления, таким образом <code>parseInt</code> может также читать строки с шестнадцатеричными числами, двоичными числами и т.д.:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">'0xff'</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 255</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">'ff'</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 255, без 0x тоже работает</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">'2n9c'</span><span class="token punctuation">,</span> <span class="token number">36</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 123456</span></code></pre>
+        </div>
+      </div>
+      
+      </div></div></div>
+<h2><a class="main__anchor" name="drugie-matematicheskie-funktsii" href="https://learn.javascript.ru/number#drugie-matematicheskie-funktsii">Другие математические функции</a></h2><p>В JavaScript встроен объект <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math">Math</a>, который содержит различные математические функции и константы.</p>
+<p>Несколько примеров:</p>
+<dl>
+<dt><code>Math.random()</code></dt>
+<dd>
+<p>Возвращает псевдослучайное число в диапазоне от 0 (включительно) до 1 (но не включая 1)</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0.1234567894322</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0.5435252343232</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ... (любое количество псевдослучайных чисел)</span></code></pre>
+        </div>
+      </div>
+      
+      </div></dd>
+<dt><code>Math.max(a, b, c...)</code> / <code>Math.min(a, b, c...)</code></dt>
+<dd>
+<p>Возвращает наибольшее/наименьшее число из перечисленных аргументов.</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span></code></pre>
+        </div>
+      </div>
+      
+      </div></dd>
+<dt><code>Math.pow(n, power)</code></dt>
+<dd>
+<p>Возвращает число <code>n</code>, возведённое в степень <code>power</code></p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2 в степени 10 = 1024</span></code></pre>
+        </div>
+      </div>
+      
+      </div></dd>
+</dl>
+<p>В объекте <code>Math</code> есть множество функций и констант, включая тригонометрические функции, подробнее можно ознакомиться в документации по объекту <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math">Math</a>.</p>
+<h2><a class="main__anchor" name="itogo" href="https://learn.javascript.ru/number#itogo">Итого</a></h2><p>Чтобы писать числа с большим количеством нулей:</p>
+<ul>
+<li>Используйте краткую форму записи чисел – <code>"e"</code>, с указанным количеством нулей. Например: <code>123e6</code> это <code>123</code> с 6-ю нулями <code>123000000</code>.</li>
+<li>Отрицательное число после <code>"e"</code> приводит к делению числа на 1 с указанным количеством нулей. Например: <code>123e-6</code> это <code>0.000123</code> (<code>123</code> миллионных).</li>
+</ul>
+<p>Для других систем счисления:</p>
+<ul>
+<li>Можно записывать числа сразу в шестнадцатеричной (<code>0x</code>), восьмеричной (<code>0o</code>) и бинарной (<code>0b</code>) системах счисления</li>
+<li><code>parseInt(str, base)</code> преобразует строку в целое число в соответствии с указанной системой счисления: <code>2 ≤ base ≤ 36</code>.</li>
+<li><code>num.toString(base)</code> представляет число в строковом виде в указанной системе счисления <code>base</code>.</li>
+</ul>
+<p>Для преобразования значений типа <code>12pt</code> и <code>100px</code> в число:</p>
+<ul>
+<li>Используйте <code>parseInt/parseFloat</code> для «мягкого» преобразования строки в число, данные функции по порядку считывают число из строки до тех пор пока не возникнет ошибка.</li>
+</ul>
+<p>Для дробей:</p>
+<ul>
+<li>Используйте округления <code>Math.floor</code>, <code>Math.ceil</code>, <code>Math.trunc</code>, <code>Math.round</code> или <code>num.toFixed(precision)</code>.</li>
+<li>Помните, что при работе с дробями происходит потеря точности.</li>
+</ul>
+<p>Ещё больше математических функций:</p>
+<ul>
+<li>Документация по объекту <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math">Math</a>. Библиотека маленькая, но содержит всё самое важное.</li>
+</ul>
+</div></article><div class="tasks formatted"><h2 class="tasks__title" id="tasks"><a class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon" href="https://learn.javascript.ru/number#tasks">Задачи</a></h2><div class="task tasks__task"><div class="task__header"><div class="task__title-wrap"><h3 class="task__title"><a class="main__anchor" href="https://learn.javascript.ru/number#summa-polzovatelskih-chisel" name="summa-polzovatelskih-chisel">Сумма пользовательских чисел</a></h3><a class="task__open-link" href="https://learn.javascript.ru/task/sum-interface" target="_blank"></a></div><div class="task__header-note"><span class="task__importance" title="Насколько эта задача важна для освоения материала, от 1 до 5">важность: 5</span></div><div class="task__content"><p>Создайте скрипт, который запрашивает ввод двух чисел (используйте prompt) и после показывает их сумму.</p>
+<p><a href="https://learn.javascript.ru/number#" onclick="event.preventDefault(); runDemo(this)">Запустить демо</a></p><p>P.S. Есть «подводный камень» при работе с типами.</p>
+<button class="task__solution" type="button">решение</button><div class="task__answer"><div class="task__answer-content"><div data-trusted="1" class="code-example" data-demo="1" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token operator">+</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"Введите первое число"</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token operator">+</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"Введите второе число"</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> a <span class="token operator">+</span> b <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Обратите внимание, что мы использовали унарный оператор <code>+</code> перед <code>prompt</code>, он преобразует значение в числовой формат.</p>
+<p>В противном случае, <code>a</code> и <code>b</code> будут строками, и после суммирования произойдёт конкатенация двух строк, а именно: <code>"1" + "2" = "12"</code>.</p>
+</div><button class="close-button task__answer-close" type="button" title="закрыть"></button></div></div></div></div><div class="task tasks__task"><div class="task__header"><div class="task__title-wrap"><h3 class="task__title"><a class="main__anchor" href="https://learn.javascript.ru/number#pochemu-6-35-tofixed-1-6-3" name="pochemu-6-35-tofixed-1-6-3">Почему 6.35.toFixed(1) == 6.3?</a></h3><a class="task__open-link" href="https://learn.javascript.ru/task/why-rounded-down" target="_blank"></a></div><div class="task__header-note"><span class="task__importance" title="Насколько эта задача важна для освоения материала, от 1 до 5">важность: 4</span></div><div class="task__content"><p>Методы <code>Math.round</code> и <code>toFixed</code>, согласно документации, округляют до ближайшего целого числа: <code>0..4</code> округляется в меньшую сторону, тогда как <code>5..9</code> в большую сторону.</p>
+<p>Например:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">1.35</span><span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1.4</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Но почему в примере ниже 6.35 округляется до 6.3?</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">6.35</span><span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 6.3</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Как правильно округлить <code>6.35</code>?</p>
+<button class="task__solution" type="button">решение</button><div class="task__answer"><div class="task__answer-content"><p>Во внутреннем двоичном представлении 6.35 является бесконечной двоичной дробью. Хранится она с потерей точности…</p>
+<p>Давайте посмотрим:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">6.35</span><span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 6.34999999999999964473</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Потеря точности может как увеличивать, так и уменьшать число. В данном случае число становится чуть меньше, поэтому оно округляется в меньшую сторону.</p>
+<p>А для числа <code>1.35</code>?</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token number">1.35</span><span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1.35000000000000008882</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Тут потеря точности приводит к увеличению числа, поэтому округление произойдёт в большую сторону.</p>
+<p><strong>Каким образом можно исправить ошибку в округлении числа <code>6.35</code>?</strong></p>
+<p>Мы должны приблизить его к целому числу, перед округлением:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token number">6.35</span> <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 63.50000000000000000000</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Обратите внимание, что для числа <code>63.5</code> не происходит потери точности. Дело в том, что десятичная часть <code>0.5</code> на самом деле <code>1/2</code>. Дробные числа, делённые на степень <code>2</code>, точно представлены в двоичной системе, теперь мы можем округлить число:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span><span class="token number">6.35</span> <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 6.35 -&gt; 63.5 -&gt; 64(rounded) -&gt; 6.4</span></code></pre>
+        </div>
+      </div>
+      
+      </div></div><button class="close-button task__answer-close" type="button" title="закрыть"></button></div></div></div></div><div class="task tasks__task"><div class="task__header"><div class="task__title-wrap"><h3 class="task__title"><a class="main__anchor" href="https://learn.javascript.ru/number#vvod-chislovogo-znacheniya" name="vvod-chislovogo-znacheniya">Ввод числового значения</a></h3><a class="task__open-link" href="https://learn.javascript.ru/task/repeat-until-number" target="_blank"></a></div><div class="task__header-note"><span class="task__importance" title="Насколько эта задача важна для освоения материала, от 1 до 5">важность: 5</span></div><div class="task__content"><p>Создайте функцию <code>readNumber</code>, которая будет запрашивать ввод числового значения до тех пор, пока посетитель его не введёт.</p>
+<p>Функция должна возвращать числовое значение.</p>
+<p>Также надо разрешить пользователю остановить процесс ввода, отправив пустую строку или нажав «Отмена». В этом случае функция должна вернуть <code>null</code>.</p>
+<p><a href="https://learn.javascript.ru/number#" onclick="event.preventDefault(); runDemo(this)">Запустить демо</a></p><p><a href="https://plnkr.co/edit/dKRj7PBDpz58ed0t?p=preview" target="_blank" data-plunk-id="dKRj7PBDpz58ed0t">Открыть песочницу с тестами для задачи.</a></p><button class="task__solution" type="button">решение</button><div class="task__answer"><div class="task__answer-content"><div data-trusted="1" class="code-example" data-demo="1" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">readNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> num<span class="token punctuation">;</span>
+
+  <span class="token keyword">do</span> <span class="token punctuation">{</span>
+    num <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"Введите число"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span> <span class="token operator">!</span><span class="token function">isFinite</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> num <span class="token operator">===</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token operator">+</span>num<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Число: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">readNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Решение немного сложнее, чем могло бы быть, потому что нам надо обрабатывать <code>null</code> и пустую строку.</p>
+<p>Следовательно, запрашиваем ввод числового значения, пока посетитель его не введёт. И <code>null</code> (отмена) и пустая строка также соответствуют данному условию, потому что при приведении к числу они равны <code>0</code>.</p>
+<p>После того, как цикл завершится, нам нужно проверить введённое значение на <code>null</code> и пустую строку (вернуть <code>null</code>), потому что после преобразования <code>null</code> в число, функция вернёт <code>0</code>.</p>
+<p><a href="https://plnkr.co/edit/VPKxcUAq79UUYpiy?p=preview" target="_blank" data-plunk-id="VPKxcUAq79UUYpiy">Открыть решение с тестами в песочнице.</a></p></div><button class="close-button task__answer-close" type="button" title="закрыть"></button></div></div></div></div><div class="task tasks__task"><div class="task__header"><div class="task__title-wrap"><h3 class="task__title"><a class="main__anchor" href="https://learn.javascript.ru/number#beskonechnyy-tsikl-po-oshibke" name="beskonechnyy-tsikl-po-oshibke">Бесконечный цикл по ошибке</a></h3><a class="task__open-link" href="https://learn.javascript.ru/task/endless-loop-error" target="_blank"></a></div><div class="task__header-note"><span class="task__importance" title="Насколько эта задача важна для освоения материала, от 1 до 5">важность: 4</span></div><div class="task__content"><p>Этот цикл – бесконечный. Он никогда не завершится, почему?</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">!=</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  i <span class="token operator">+=</span> <span class="token number">0.2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+        </div>
+      </div>
+      
+      </div><button class="task__solution" type="button">решение</button><div class="task__answer"><div class="task__answer-content"><p>Потому что <code>i</code> никогда не станет равным <code>10</code>.</p>
+<p>Запустите скрипт и вы увидите <em>реальные</em> значения <code>i</code>:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">11</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  i <span class="token operator">+=</span> <span class="token number">0.2</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">&gt;</span> <span class="token number">9.8</span> <span class="token operator">&amp;&amp;</span> i <span class="token operator">&lt;</span> <span class="token number">10.2</span><span class="token punctuation">)</span> <span class="token function">alert</span><span class="token punctuation">(</span> i <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Ни одно из этих чисел не равно <code>10</code>.</p>
+<p>Это происходит из-за потери точности, при прибавлении таких дробей как <code>0.2</code>.</p>
+<p>Вывод: избегайте проверок на равенство при работе с десятичными дробями.</p>
+</div><button class="close-button task__answer-close" type="button" title="закрыть"></button></div></div></div></div><div class="task tasks__task"><div class="task__header"><div class="task__title-wrap"><h3 class="task__title"><a class="main__anchor" href="https://learn.javascript.ru/number#sluchaynoe-chislo-ot-min-do-max" name="sluchaynoe-chislo-ot-min-do-max">Случайное число от min до max</a></h3><a class="task__open-link" href="https://learn.javascript.ru/task/random-min-max" target="_blank"></a></div><div class="task__header-note"><span class="task__importance" title="Насколько эта задача важна для освоения материала, от 1 до 5">важность: 2</span></div><div class="task__content"><p>Встроенный метод <code>Math.random()</code> возвращает случайное число от <code>0</code> (включительно) до <code>1</code> (но не включая <code>1</code>)</p>
+<p>Напишите функцию <code>random(min, max)</code>, которая генерирует случайное число с плавающей точкой от <code>min</code> до <code>max</code> (но не включая <code>max</code>).</p>
+<p>Пример работы функции:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1.2345623452</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3.7894332423</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 4.3435234525</span></code></pre>
+        </div>
+      </div>
+      
+      </div><button class="task__solution" type="button">решение</button><div class="task__answer"><div class="task__answer-content"><p>Нам нужно преобразовать каждое значение из интервала 0…1 в значения от <code>min</code> до <code>max</code>.</p>
+<p>Это можно сделать в 2 шага:</p>
+<ol>
+<li>Если мы умножим случайное число от 0…1 на <code>max-min</code>, тогда интервал возможных значений от <code>0..1</code> увеличивается до <code>0..max-min</code>.</li>
+<li>И, если мы прибавим <code>min</code>, то интервал станет от <code>min</code> до <code>max</code>.</li>
+</ol>
+<p>Функция:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token parameter">min<span class="token punctuation">,</span> max</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> min <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>max <span class="token operator">-</span> min<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div></div><button class="close-button task__answer-close" type="button" title="закрыть"></button></div></div></div></div><div class="task tasks__task"><div class="task__header"><div class="task__title-wrap"><h3 class="task__title"><a class="main__anchor" href="https://learn.javascript.ru/number#sluchaynoe-tseloe-chislo-ot-min-do-max" name="sluchaynoe-tseloe-chislo-ot-min-do-max">Случайное целое число от min до max</a></h3><a class="task__open-link" href="https://learn.javascript.ru/task/random-int-min-max" target="_blank"></a></div><div class="task__header-note"><span class="task__importance" title="Насколько эта задача важна для освоения материала, от 1 до 5">важность: 2</span></div><div class="task__content"><p>Напишите функцию <code>randomInteger(min, max)</code>, которая генерирует случайное <em>целое</em> (integer) число от <code>min</code> до <code>max</code> (включительно).</p>
+<p>Любое число из интервала <code>min..max</code> должно появляться с одинаковой вероятностью.</p>
+<p>Пример работы функции:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Можно использовать решение из <a href="https://learn.javascript.ru/task/random-min-max">предыдущей задачи</a>.</p>
+<button class="task__solution" type="button">решение</button><div class="task__answer"><div class="task__step task__step_open"><button class="task__step-show" type="button" onclick="showStep(this)">Простое, но неправильное решение</button><div class="task__answer-content"><h4 class="task__step-title">Простое, но неправильное решение</h4><p>Самое простое, но неправильное решение – генерировать случайное число от <code>min</code> до <code>max</code> и округлять его:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token parameter">min<span class="token punctuation">,</span> max</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> rand <span class="token operator">=</span> min <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>max <span class="token operator">-</span> min<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>rand<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Функция будет работать, но неправильно. Вероятность получить <code>min</code> и <code>max</code> значения в 2 раза меньше, чем любое другое число.</p>
+<p>Если вы запустите приведённый выше пример, то заметите, что <code>2</code> появляется чаще всего.</p>
+<p>Это происходит потому, что метод <code>Math.round()</code> получает случайные числа из интервала <code>1..3</code> и округляет их следующим образом:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span></span><code class=" language-javascript">число от <span class="token number">1</span>    <span class="token operator">...</span> до <span class="token number">1.4999999999</span>  округлится до <span class="token number">1</span>
+число от <span class="token number">1.5</span>  <span class="token operator">...</span> до <span class="token number">2.4999999999</span>  округлится до <span class="token number">2</span>
+число от <span class="token number">2.5</span>  <span class="token operator">...</span> до <span class="token number">2.9999999999</span>  округлится до <span class="token number">3</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Теперь становится понятно, что <code>1</code> получает в 2 раза меньше значений, чем <code>2</code>. Тоже самое с <code>3</code>.</p>
+</div></div><div class="task__step task__step_open"><button class="task__step-show" type="button" onclick="showStep(this)">Правильное решение задачи</button><div class="task__answer-content"><h4 class="task__step-title">Правильное решение задачи</h4><p>Есть много правильных решений этой задачи. Одно из них – правильно указать границы интервала. Чтобы выровнять интервалы, мы можем генерировать числа от <code>0.5 до 3.5</code>, это позволит добавить <em>необходимые вероятности</em> к <code>min</code> и <code>max</code>:</p>
+<div data-trusted="1" class="code-example" data-highlight="[{&quot;start&quot;:0,&quot;end&quot;:4}]" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><em class="block-highlight"><span class="token keyword">function</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token parameter">min<span class="token punctuation">,</span> max</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// получить случайное число от (min-0.5) до (max+0.5)</span>
+  <span class="token keyword">let</span> rand <span class="token operator">=</span> min <span class="token operator">-</span> <span class="token number">0.5</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>max <span class="token operator">-</span> min <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>rand<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></em>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Другое правильное решение – это использовать <code>Math.floor</code> для получения случайного числа от <code>min</code> до <code>max+1</code>:</p>
+<div data-trusted="1" class="code-example" data-highlight="[{&quot;start&quot;:0,&quot;end&quot;:4}]" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="toolbar codebox__toolbar">
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="выполнить" data-action="run" class="toolbar__button toolbar__button_run"></a>
+          </div>
+          <div class="toolbar__tool">
+            <a href="https://learn.javascript.ru/number#" title="открыть в песочнице" target="_blank" data-action="edit" class="toolbar__button toolbar__button_edit"></a>
+          </div>
+        </div>
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><em class="block-highlight"><span class="token keyword">function</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token parameter">min<span class="token punctuation">,</span> max</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// случайное число от min до (max+1)</span>
+  <span class="token keyword">let</span> rand <span class="token operator">=</span> min <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>max <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">-</span> min<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>rand<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></em>
+
+<span class="token function">alert</span><span class="token punctuation">(</span> <span class="token function">randomInteger</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Теперь все интервалы отображаются следующим образом:</p>
+<div data-trusted="1" class="code-example" data-prism-highlighted="1">
+      <div class="codebox code-example__codebox">
+        
+        <div class="codebox__code" data-code="1">
+          <pre class="line-numbers  language-javascript"><span class="line-numbers-rows"><span></span><span></span><span></span></span><code class=" language-javascript">число от <span class="token number">1</span>  <span class="token operator">...</span> до <span class="token number">1.9999999999</span>  округлится до <span class="token number">1</span>
+число от <span class="token number">2</span>  <span class="token operator">...</span> до <span class="token number">2.9999999999</span>  округлится до <span class="token number">2</span>
+число от <span class="token number">3</span>  <span class="token operator">...</span> до <span class="token number">3.9999999999</span>  округлится до <span class="token number">3</span></code></pre>
+        </div>
+      </div>
+      
+      </div><p>Все интервалы имеют одинаковую длину, что выравнивает вероятность получения случайных чисел.</p>
+</div></div><button class="close-button task__answer-close" type="button" title="закрыть"></button></div></div></div></div></div></div><div class="page__nav-wrap"><a class="page__nav page__nav_prev" href="https://learn.javascript.ru/primitives-methods" data-tooltip="Методы у примитивов"><span class="page__nav-text"><span class="page__nav-text-shortcut">Ctrl + <span class="page__nav-text-arr">←</span></span></span><span class="page__nav-text-alternate">Предыдущий урок</span></a><a class="page__nav page__nav_next" href="https://learn.javascript.ru/string" data-tooltip="Строки"><span class="page__nav-text"><span class="page__nav-text-shortcut">Ctrl + <span class="page__nav-text-arr">→</span></span></span><span class="page__nav-text-alternate">Следующий урок</span></a></div><div class="article-tablet-foot tablet-only"><div class="article-tablet-foot__layout"><div class="share-icons"><span class="share-icons__title">Поделиться</span><a class="share share_tw" href="https://twitter.com/share?url=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a><a class="share share_fb" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a><a class="share share_vk" href="https://vkontakte.ru/share.php?url=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a></div><div class="article-tablet-foot__map"><a class="map" href="https://learn.javascript.ru/tutorial/map" data-action="tutorial-map"><span class="map__text">Карта учебника</span></a></div></div></div><div class="banner-bottom" style="display: flex;"><div class="banner-bottom__text">Проводим <a href="https://learn.javascript.ru/courses">курсы по JavaScript и фреймворкам</a>.</div><button class="banner-bottom__close" data-banner-close="Courses" data-banner-close-message="Эта информация больше не будет выводиться." title="не показывать"></button></div><script>!!1&&"hideBannerCourses"in localStorage||(document.querySelector(".banner-bottom").style.display="flex");</script><div class="comments formatted" id="comments"><div class="comments__header"><h2 class="comments__header-title"><a href="https://learn.javascript.ru/number#comments" name="comments">Комментарии</a></h2><div class="comments__read-before"><span class="comments__read-before-link">перед тем как писать…</span><div class="comments__read-before-popup"><div class="comments__read-before-popup-i"><ul><li>Если вам кажется, что в статье что-то не так - вместо комментария напишите <a href="https://github.com/javascript-tutorial/ru.javascript.info/issues/new">на GitHub</a>.</li><li>Для одной строки кода используйте тег <code>&lt;code&gt;</code>, для нескольких строк кода&nbsp;— тег <code>&lt;pre&gt;</code>, если больше 10 строк&nbsp;— ссылку на песочницу (<a href="https://plnkr.co/edit/?p=preview">plnkr</a>, <a href="http://jsbin.com/">JSBin</a>, <a href="http://codepen.io/">codepen</a>…)</li><li>Если что-то непонятно в статье&nbsp;— пишите, что именно и с какого места.</li></ul></div></div></div></div><div id="disqus_thread"></div><script>var disqus_config = function() { if (!this.page) this.page = {}; Object.assign(this.page, {"url":"https:\/\/learn.javascript.ru\/number","identifier":"\/number"}); };</script><script>var disqus_shortname = "learnjavascriptru";</script><script>var disqus_enabled = true;</script></div></main></div><div class="sidebar page__sidebar sidebar_sticky-footer sidebar_compact" style="top: 141px;"><button class="sidebar__toggle" data-sidebar-toggle=""></button><a class="map" href="https://learn.javascript.ru/tutorial/map" data-action="tutorial-map" data-tooltip="Карта учебника"></a><div class="sidebar__inner"><div class="sidebar__content"><div class="sidebar__section"><h4 class="sidebar__section-title">Раздел</h4><nav class="sidebar__navigation"><ul class="sidebar__navigation-links"><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/data-types">Типы данных</a></li></ul></nav></div><div class="sidebar__section"><h4 class="sidebar__section-title">Навигация по уроку</h4><nav class="sidebar__navigation"><ul class="sidebar__navigation-links"><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#sposoby-zapisi-chisla">Способы записи числа</a></li><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#tostring-base">toString(base)</a></li><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#okruglenie">Округление</a></li><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#netochnye-vychisleniya">Неточные вычисления</a></li><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#proverka-isfinite-i-isnan">Проверка: isFinite и isNaN</a></li><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#parseint-i-parsefloat">parseInt и parseFloat</a></li><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#drugie-matematicheskie-funktsii">Другие математические функции</a></li><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#itogo">Итого</a></li></ul></nav></div><div class="sidebar__section"><nav class="sidebar__navigation"><ul class="sidebar__navigation-links"><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#tasks">Задачи (6)</a></li><li class="sidebar__navigation-link"><a class="sidebar__link" href="https://learn.javascript.ru/number#comments">Комментарии</a></li></ul></nav></div><div class="sidebar__section"><div class="sidebar__section-title">Поделиться</div><a class="share share_tw sidebar__share" href="https://twitter.com/share?url=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a><a class="share share_fb sidebar__share" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a><a class="share share_vk sidebar__share" href="https://vkontakte.ru/share.php?url=https%3A%2F%2Flearn.javascript.ru%2Fnumber" rel="nofollow"></a></div><div class="sidebar__section"><a class="sidebar__link" href="https://github.com/javascript-tutorial/ru.javascript.info/blob/master/1-js/05-data-types/02-number" rel="nofollow">Редактировать на GitHub</a></div></div></div></div></div></div><div class="page-footer"><ul class="page-footer__list"><li class="page-footer__item page-footer__item_copy">©&nbsp;2007—2020&nbsp; Илья Кантор</li><li class="page-footer__item page-footer__item_about"><a class="page-footer__link" href="https://learn.javascript.ru/about">о проекте</a></li><li class="page-footer__item page-footer__item_contact"><a class="page-footer__link" href="https://learn.javascript.ru/about#contact-us">связаться с нами</a></li><li class="page-footer__item page-footer__item_terms"><a class="page-footer__link" href="https://learn.javascript.ru/terms">пользовательское соглашение</a></li><li class="page-footer__item page-footer__item_privacy"><a class="page-footer__link" href="https://learn.javascript.ru/privacy">политика конфиденциальности</a></li><li class="page-footer__item page-footer__item_slack"><a class="page-footer__slack" href="http://slack.javascript.ru/">slack-чат</a></li></ul></div></body></html>
